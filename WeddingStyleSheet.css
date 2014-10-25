@@ -1,3 +1,7 @@
+.link_my a:hover{
+
+font-weight:bold;
+}
 .test{
     background-color:coral; 
     width:25vw; 

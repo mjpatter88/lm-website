@@ -1,7 +1,8 @@
 .pic{ 
     width:"100%"; 
     opacity: .5; 
-    filter: alpha(opacity=50);  
+    filter: alpha(opacity=50);
+    
 } 
 
 .pic:hover { 
