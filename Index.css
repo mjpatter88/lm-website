@@ -1,0 +1,10 @@
+.pic{ 
+    width:"100%"; 
+    opacity: .5; 
+    filter: alpha(opacity=50);  
+} 
+
+.pic:hover { 
+    opacity: 1; 
+    filter: alpha(opacity=100); 
+} 
