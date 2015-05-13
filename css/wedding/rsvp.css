@@ -1,0 +1,106 @@
+html {
+    /* Apply an image to the entire background */
+    background: url(../../images/wedding/Sunrise.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#contact-form {
+    /*background-color: rgba(255,255,255,0);*/
+    width:50%;
+    padding:20px;
+    margin: 50px auto;    
+    position:relative;
+    color: rgba(47, 79, 79, 1);
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:1.25em;
+    margin-bottom:2px;
+    color: rgba(47, 79, 79, .8);
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    border-color: rgba(47, 79, 79, 1);
+    border-style: solid;
+    border-width: thin;
+    padding:4px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+
+#contact-form p{
+    margin-bottom: 5px;
+}
+
+#contact-form #submit-button {
+    width: 100px;
+    background-color: rgba(47, 79, 79, 1);
+    color:#FFF;
+    border:none;
+    display:block;
+    margin-top: 30px;
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: rgba(47, 79, 79, .8);
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#errors {
+    display: none;
+}
+
+#success {
+    display: none;
+}
+
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color: rgba(47, 79, 79, .8);
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: rgba(47, 79, 79, .8);
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:rgba(255,255,255,.6);
+    font-style:italic;
+}
