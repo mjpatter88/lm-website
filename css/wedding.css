@@ -16,43 +16,31 @@ html {
     left: 20px;
 }
 
-#right-bar {
-    width: 100%;
-    float: right;
-}
-
 nav {
-    
-    /*height: 10%;*/
-    font-family: poiret-one, sans-serif;
-    color: #111111;
-    font-size: 1.5em;
-    margin-left: 2%;
+    margin-top: 1%;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
-    float: right;
-    width: 25%;
-    padding-top: 10px;
-    padding-right: 2%;
+    list-style: none;
 }
 
 nav ul li {
-    display: block;
-    text-align: right;
-    padding-bottom: 15px;
+    display: inline;
+    text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: inherit;
+    font-family: poiret-one, sans-serif;
+    color: white;
+    font-size: 2em;
     outline: 0;
 }
 
 nav ul li a:hover {
-    text-shadow: 1px 1px rgba(0, 0, 0, .25);
+    text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
 }
 
 nav ul li a:active {
