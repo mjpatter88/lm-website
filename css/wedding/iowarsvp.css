@@ -16,22 +16,22 @@ html {
 }
 
 #rsvp-body {
-    font-family: josefin-sans, sans-serif;
+    font-family: poiret-one, sans-serif;
     margin-bottom: 30;
 }
 
 #note {
-    font-family: josefin-sans, sans-serif;
+    font-family: poiret-one, sans-serif;
     position: relative;
-    width: 250px;
-    font-size: 1.3em;
+    width: 370px;
+    font-size: 1.5em;
     background-color: rgba(250, 250, 250, .7);
     padding: 5px;
-    border: 2px solid rgba(47, 79, 79, 1);
+    border: 1px solid rgba(47, 79, 79, 1);
     margin: 50px auto;
     display: block;
-    text-align: center
-    
+    text-align: center;
+    color: rgba(47, 79, 79, 1)
 }
 
 #contact-form {
@@ -40,7 +40,7 @@ html {
     margin: 50px auto;    
     position:relative;
     color: rgba(47, 79, 79, 1);
-    font-family: josefin-sans, sans-serif;
+    font-family: poiret-one, sans-serif;
     font-size: 1.3em;
     text-align: center;
     
@@ -95,7 +95,7 @@ input:required, textarea:required {
     border:none;
     display:block;
     margin-top: 30px;
-    font-family: josefin-sans, sans-serif;
+    font-family: poiret-one, sans-serif;
     margin: 50px auto;
 }
  
