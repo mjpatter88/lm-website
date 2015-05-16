@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../images/giraffe3.jpg) no-repeat center center fixed;
+    background: url(../images/giraffe3.jpg) no-repeat bottom right fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
