@@ -51,3 +51,22 @@ nav ul li a:active {
 nav ul li a:focus {
     outline:0;
 }
+
+#rsvp-container
+{
+    background-color: blue;
+    width: 50%;
+    text-align: center;
+}
+
+.rsvp-box
+{
+    outline-width: medium;
+    outline-style: dashed;
+    outline-color: brown;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 0;
+}
