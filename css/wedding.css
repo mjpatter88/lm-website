@@ -11,9 +11,9 @@ html {
 
 #logo {
     position: absolute;
-    right: 35%;
-    bottom: 3%;
-    width: 15%;
+    width: 35%;
+    bottom: 2px;
+    left: 20px;
 }
 
 #right-bar {
