@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../images/dip.jpg) no-repeat bottom right fixed;
+    background: url(../images/dip.jpg) no-repeat bottom center fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
@@ -11,94 +11,94 @@ html {
 
 #logo {
     position: absolute;
-    width: 45%;
+    width: 35%;
     bottom: 40px;
-    left: 20px;
+    left: 32.5%;
+    
 }
 
-nav {
+#home-logo img
+{
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 0;
+    width: 80%;
+}
 
+#nav-bar
+{
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
     margin-top: 1%;
-
 }
 
-nav ul {
+#nav div {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li {
+#nav div div {
     display: inline;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li a {
+#nav div div a {
     text-decoration: none;
     font-family: poiret-one, sans-serif;    
     font-size: 2.2em;
     outline: 0;
-    color: white
+    color: white;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li a:hover {
+#nav dvi div a:hover {
     text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
 }
 
-nav ul li a:active {
+#nav div div a:active {
     position:relative;
     top:1px;
 }
 
-nav ul li a:focus {
+#nav div div a:focus {
     outline:0;
 }
 
-#rsvp-container
-{
-    background-color:;
-    width: 50%;
-    text-align: center;
-    margin-top: 10%;
-    color: white;
-    
-}
 
 
-.rsvp-box
+#rsvp-button
 {
-    outline: 1px solid white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    padding: 0;
     font-family: poiret-one, sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 1em;
+    margin-top: 80px;
+    text-align: center;
 }
 
-.rsvp-box2
+.rsvp-header
 {
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    display: block;
+    font-size: 3em;
+    outline: 2px solid white;
+    background-color: rgba(250, 250, 250, .3);
+    width: 250px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    padding: 0;
-    font-family: euphoria-script, sans-serif;
-    font-size: 3em;
-    margin-bottom: 20px;
 }
 
 .rsvp-large
 {
     font-family: poiret-one, sans-serif;
     font-size: 2em;
-    width:80%; 
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .rsvp-small
@@ -109,3 +109,12 @@ nav ul li a:focus {
     margin-left: auto;
     margin-right: auto;
 }
+
+a {
+ 
+    text-decoration: none;
+    color: white;
+    
+}
+
+

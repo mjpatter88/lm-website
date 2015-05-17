@@ -34,7 +34,7 @@ html {
     color: rgba(47, 79, 79, 1)
 }
 
-#back-button {
+#back-button a {
     font-family: poiret-one, sans-serif;
     position: absolute;
     font-size: 2em;
@@ -43,6 +43,7 @@ html {
     color: rgba(47, 79, 79, 1);
     top:10px;
     left:10px;
+    text-decoration: none;
 }
 
 
