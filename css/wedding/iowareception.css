@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../../images/wedding/red%20cedar%20lodge%202.jpg) no-repeat top right fixed;
+    background: url(../../images/wedding/red%20cedar%20lodge%202.jpg) no-repeat bottom right fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
@@ -30,14 +30,16 @@ html {
 #info
 {
     position:absolute;
-    width:800px;
+    bottom: 8%;
     display: block;
     right: 5%;
     font-family: poiret-one, sans-serif;
     font-size: 5em;
     text-align: right;
     color: white;
-    top: 15%
+    padding-right: 10px;
+    border-right: 10px solid white;
+    
 
 }
 
@@ -53,9 +55,11 @@ html {
     padding: 8px;
     position: absolute;
     display: block;
-    right: 0px;
     text-align: center;
-    background-color: rgba( 250, 250, 250, .5);
+    background-color: rgba( 250, 250, 250, .3);
+    margin-top: 20px;
+    right: 0px;
+    
 }
 
 p
@@ -101,4 +105,7 @@ nav ul li a:focus {
     outline:0;
 }
 
-
+a{
+   text-decoration: none;
+    color: white; 
+}

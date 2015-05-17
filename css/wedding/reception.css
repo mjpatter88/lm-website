@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../../images/wedding/shannonHall.jpg) no-repeat bottom center fixed;
+    background: url(../../images/wedding/shannonHall.jpg) no-repeat bottom left fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
@@ -30,15 +30,15 @@ html {
 #info
 {
     position:absolute;
-    width:450px;
     display: block;
-    right: 5%;
+    left: 5%;
     font-family: poiret-one, sans-serif;
     font-size: 5em;
-    text-align: right;
+    text-align: left;
     color: white;
-    top: 15%
-
+    bottom: 10%;
+    padding-left:10px;
+    border-left: 10px solid white;
 }
 
 .address
@@ -53,9 +53,9 @@ html {
     padding: 8px;
     position: absolute;
     display: block;
-    right: 0px;
-    text-align: center;
+    text-align: left;
     background-color: rgba( 250, 250, 250, .5);
+    margin-top: 20px;
 }
 
 p
@@ -101,4 +101,8 @@ nav ul li a:focus {
     outline:0;
 }
 
-
+a {
+ 
+    text-decoration: none;
+    color: white
+}
