@@ -19,59 +19,37 @@ html {
 
 #home-logo img
 {
-    margin-left: 10px;
-    margin-right: 0;
+    margin-left: 20%;
     padding: 0;
-    width: 80%;
-}
-
-#nav-bar
-{
-    margin: 0;
-    padding: 0;
+    height: 10%;
 }
 
 #nav {
     margin-top: 1%;
 }
 
-#nav div {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#nav div div {
-    display: inline;
+#nav-links
+{
+    margin-top: 1%;
     text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-#nav div div a {
-    text-decoration: none;
-    font-family: poiret-one, sans-serif;    
     font-size: 2.2em;
-    outline: 0;
-    color: white;
-    padding: 0;
-    margin: 0;
 }
 
-#nav dvi div a:hover {
+#nav-links a
+{
+    font-family: poiret-one, sans-serif;
+}
+
+#nav-links a:hover
+{
     text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
 }
 
-#nav div div a:active {
+#nav-links a:active
+{
     position:relative;
     top:1px;
 }
-
-#nav div div a:focus {
-    outline:0;
-}
-
-
 
 #rsvp-button
 {
