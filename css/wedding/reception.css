@@ -9,37 +9,36 @@ html {
     -o-background-size: cover;
 }
 
-#header {
-    font-family: euphoria-script, sans-serif;
-    font-size: 3em;
-
-}
-
-#body {
-    font-family: poiret-one, sans-serif;
-    margin-bottom: 30;
-}
-
-#logo {
-    position: absolute;
-    width: 45%;
-    bottom: 40px;
-    left: 20px;
-}
-
 #info
 {
-    position:absolute;
-    display: block;
-    left: 5%;
+    position:relative;
+    float: left;
+    left: 2%;
     font-family: poiret-one, sans-serif;
     font-size: 4em;
     text-align: left;
     color: white;
-    bottom: 10%;
+    top: 45%;
     padding-left:10px;
     border-left: 10px solid white;
+
 }
+
+@media only screen and (max-width : 568px){
+    #info {
+        top: 0%;    
+    }  
+    
+}
+
+@media only screen and (max-width : 350px){
+    #info {
+        font-size: 2.8em;
+    }  
+    
+}
+
+
 
 .address
 {
@@ -49,60 +48,18 @@ html {
 .map
 {
     outline: 1px solid white;
-    font-size: .3em;
+    font-size: .4em;
     padding: 8px;
-    position: absolute;
-    display: block;
-    text-align: left;
-    background-color: rgba( 250, 250, 250, .5);
+    text-align: center;
+    background-color: rgba( 250, 250, 250, .4);
     margin-top: 20px;
+    position: relative;
+    float: left;
 }
 
 p
 {
     margin-bottom: 0px;
     margin-top: 0px;
-    
-}
-nav {
-
-    margin-top: 1%;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    text-align: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-family: poiret-one, sans-serif;    
-    font-size: 2.2em;
-    outline: 0;
-    color: white
-}
-
-nav ul li a:hover {
-    text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
-}
-
-nav ul li a:active {
-    position:relative;
-    top:1px;
-}
-
-nav ul li a:focus {
-    outline:0;
-}
-
-a {
- 
-    text-decoration: none;
-    color: white
-}
