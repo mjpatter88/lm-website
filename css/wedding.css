@@ -24,13 +24,14 @@ html {
 
 }
 
-@media only screen and (max-width : 700px){
-    #rsvp-button {
+@media only screen and (max-width : 800px){
+    .rsvp-text {
         font-size: .7em;
     }
     
 }
-   
+
+  
 
 .rsvp-header
 {
