@@ -24,18 +24,19 @@ html {
 
 #nav {
     margin-top: 1%;
+    min-width: 1000px;
 }
 
 #nav-links
 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
     
 
 }
 
 .nav-item{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   
     
 }
@@ -64,16 +65,7 @@ a {
 
 
 
- @media only screen and (max-width : 1000px){
-    #nav-links {
-        font-size: 1.2em;
-    }
- }
-
-@media only screen and (max-width : 568px){
-    #nav-links {
-        font-size: 1.8em;
-    }     
+ 
      
 }
 

@@ -1,0 +1,75 @@
+html {
+    /* Apply an image to the entire background */
+    background: url(../../images/dip.jpg) no-repeat bottom left fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#registry-info{
+    font-family: poiret-one, sans-serif;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    width: 40%;
+}
+
+
+.registry-header {
+    font-size: 5em;
+    border-bottom: solid white 3px;
+    text-align: center;
+    font-family: euphoria-script, cursive;
+    margin-bottom: 20px;
+    
+    
+}
+
+.registry-button {
+    font-size: 2em;   
+    width: 50%;
+    position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+    outline: 2px solid white;
+    background-color: rgba(250, 250, 250, .3);
+}
+
+.registry-button:hover {
+    background-color: rgba(250, 250, 250, .2);
+}
+
+
+.registry-button:active {
+    position:relative;
+    top:1px;
+}
+
+p{
+    font-size: 5em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: euphoria-script, cursive;
+    padding: 0px;
+}
+
+@media only screen and (max-width : 568px){
+    #registry-info{
+        margin-top: 0px;
+        font-size: 4vw;
+        width: 90%;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
