@@ -1,17 +1,13 @@
-html {    
+html {
+    /* Apply an image to the entire background */
+    
     /* Add vendor specific prefixes for wider support */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
 
-#logo {
-    position: relative;
-    margin-top: 15%;
-    width: 100%;
-    padding-bottom: 15px;
-    
-}
+
 
 #home-logo img
 {
@@ -19,6 +15,7 @@ html {
     padding: 0;
     height: 10%;
     position: fixed;
+   
     
 }
 
@@ -30,7 +27,6 @@ html {
 {
     text-align: center;
     font-size: 1.8em;
-    
 
 }
 
@@ -56,31 +52,16 @@ html {
     top:1px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    
-}
-
-
-
- @media only screen and (max-width : 1000px){
-    #nav-links {
-        font-size: 1.2em;
-    }
- }
-
-@media only screen and (max-width : 568px){
-    #nav-links {
-        font-size: 1.8em;
-    }     
-     
-}
-
+   
 @-ms-viewport{
   width: device-width;
 }
 
-
+a {
+ 
+    text-decoration: none;
+    color: rgba(47, 79, 79, 1);
+    
+}
 
 
