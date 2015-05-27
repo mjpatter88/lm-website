@@ -19,42 +19,66 @@ html {
     padding: 0;
     height: 10%;
     position: fixed;
+    margin-top: 8px;
     
 }
 
-#nav {
-    margin-top: 1%;
+.pure-menu {
+    margin-top: 10px;
     min-width: 1000px;
-}
-
-#nav-links
-{
-    text-align: center;
-    font-size: 1.5em;
-    
-
-}
-
-.nav-item{
-    margin-bottom: 20px;
-  
-    
-}
-
-#nav-links a
-{
+    height: 40px;
     font-family: poiret-one, sans-serif;
+    color: white;
+    
 }
 
-#nav-links a:hover
+.pure-menu-item
+{
+    font-size: 1.8em;
+    color: white;
+    width: 200px;
+}
+
+.pure-menu-list
+{
+    text-align: left;
+    color: white;
+    position: relative;
+    margin-left: 80px; 
+    width: 90%;
+    
+}
+
+.pure-menu-link
+{
+    color: white;
+    text-align: left;
+}
+
+.pure-menu-item a:hover
 {
     text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
+    background-color: none;
+    background: none;
+    
 }
 
-#nav-links a:active
+.pure-menu-item a:active
 {
     position:relative;
     top:1px;
+    color: white;
+}
+
+.pure-menu-children
+{
+    font-size: .4em; 
+    background: none;
+}
+
+.pure-menu-children a:hover
+{ 
+    background-color: none;
 }
 
 a {
@@ -62,8 +86,6 @@ a {
     color: white;
     
 }
-
-
 
  
      
