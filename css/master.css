@@ -17,9 +17,9 @@ html {
 {
     margin-left: 8px;
     padding: 0;
-    height: 10%;
+    height: 70px;
     position: fixed;
-    margin-top: 8px;
+    margin-top: 3px;
     
 }
 
@@ -32,9 +32,7 @@ html {
     color: white;
     position: relative;
     margin-left: auto;
-    margin-right: auto;
-    width: 100%
-    
+    margin-right: auto;    
 }
 
 .pure-menu-item
@@ -49,9 +47,7 @@ html {
     text-align: left;
     color: white;
     position: relative;
-    margin-left: 80px; 
-    width: 100%;
-    
+    margin-left: 80px;     
 }
 
 .pure-menu-link
