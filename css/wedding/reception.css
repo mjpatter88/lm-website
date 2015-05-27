@@ -15,25 +15,21 @@ html {
     float: left;
     left: 2%;
     font-family: poiret-one, sans-serif;
-    font-size: 4em;
+    font-size: 5em;
     text-align: left;
     color: white;
-    top: 45%;
+    top: 150px;
     padding-left:10px;
     border-left: 10px solid white;
 
 }
 
-@media only screen and (max-width : 568px){
-    #info {
-        top: 0%;    
-    }  
-    
-}
 
-@media only screen and (max-width : 350px){
+
+@media only screen and (max-width : 450px){
     #info {
-        font-size: 2.8em;
+       
+        font-size: 17vw;
     }  
     
 }

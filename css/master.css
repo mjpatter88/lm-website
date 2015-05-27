@@ -23,20 +23,25 @@ html {
     
 }
 
+
 .pure-menu {
-    margin-top: 10px;
-    min-width: 1000px;
-    height: 40px;
+    margin-top: 1%;
+    min-width: 800px;
+    height: 50px;
     font-family: poiret-one, sans-serif;
     color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
     
 }
 
 .pure-menu-item
 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: white;
-    width: 200px;
+    position: relative;
 }
 
 .pure-menu-list
@@ -45,7 +50,7 @@ html {
     color: white;
     position: relative;
     margin-left: 80px; 
-    width: 90%;
+    width: 100%;
     
 }
 
@@ -53,11 +58,12 @@ html {
 {
     color: white;
     text-align: left;
+    position: relative;
 }
 
 .pure-menu-item a:hover
 {
-    text-shadow: 2px 2px rgba(102, 51, 0, 0.5);
+    text-shadow: 2px 2px rgba(100, 100, 100, 0.4);
     background-color: none;
     background: none;
     
@@ -67,12 +73,12 @@ html {
 {
     position:relative;
     top:1px;
-    color: white;
+    background: none;
 }
 
 .pure-menu-children
 {
-    font-size: .4em; 
+    font-size: .6em; 
     background: none;
 }
 
@@ -87,9 +93,6 @@ a {
     
 }
 
- 
-     
-}
 
 @-ms-viewport{
   width: device-width;

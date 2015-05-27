@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../../images/dip.jpg) no-repeat bottom left fixed;
+    background: url(../../images/wedding/walkingonbeach.jpg) no-repeat bottom left fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
@@ -12,12 +12,11 @@ html {
 #registry-info{
     font-family: poiret-one, sans-serif;
     position: relative;
-    margin-top: 10%;
+    margin-top: 150px;;
     margin-left: 10%;
     color: white;
-    width: 40%;
+    width: 600px;
 }
-
 
 .registry-header {
     font-size: 5em;
@@ -65,8 +64,18 @@ p{
 
 @media only screen and (max-width : 568px){
     #registry-info{
-        margin-top: 0px;
+        margin-top: 10%;
         font-size: 4vw;
+        width: 90%;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width : 800px){
+    #registry-info{
+        font-size:2vw;
         width: 90%;
         position: relative;
         margin-right: auto;

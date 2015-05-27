@@ -12,6 +12,8 @@ html {
 #rsvp-header {
     font-family: euphoria-script, sans-serif;
     font-size: 3em;
+    position: relative;
+    top: 150px;
 
 }
 
