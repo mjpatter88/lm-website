@@ -8,12 +8,12 @@
 
 .events-header {
     font-size: 5em;
-    border-bottom: solid white 3px;
     text-align: center;
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
     width: 100%;
 }
+
 
 .events-button {
     font-size: .8em;   

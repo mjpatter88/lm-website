@@ -13,6 +13,12 @@ html,body
     overflow-x: hidden; 
 }
 
+#arrow img
+{
+    padding: 0px;
+    width: 100%;
+    position: relative; 
+}
 #home-logo
 {
     margin-left: 8px;
