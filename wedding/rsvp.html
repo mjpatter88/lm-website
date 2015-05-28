@@ -4,17 +4,17 @@
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
         <link rel="stylesheet" href="../css/wedding/rsvp.css">
-        <link rel="stylesheet" href="../css/rsvpmaster.css">
+        <link rel="stylesheet" href="../css/wedding/masterrsvp.css">
         <script src="//use.edgefonts.net/euphoria-script;poiret-one.js"></script>
         <meta name=viewport content="width=device-width, initial-scale=1">
 
     </head>
     
     
-    <body>
-        <div id="home-logo"><a href="../index.html"><img src="../images/logo_icon.png"></a></div>  
+    <body>  
         <div class="pure-menu pure-menu-horizontal">
             <ul class="pure-menu-list">
+                <li id="home-logo" class="pure-menu-item"><a href="../wedding.html" class="pure-menu-link"><img src="../images/logo_icon_dark.png"></a></li>
                 <li class="pure-menu-item"><a href="../wedding.html" class="pure-menu-link"><b>Home</b></a></li>
                 <li class="pure-menu-item"><a href="../wedding/HotelAccomodations.html" class="pure-menu-link"><b>Hotel Accomodations</b></a></li>
                 <li class="pure-menu-item"><a href="../wedding/registry.html" class="pure-menu-link"><b>Registry</b></a></li>
@@ -30,41 +30,41 @@
             </ul>
         </div>
         
-        <div id="contact-form">
-            <div id="rsvp-header">RSVP</div>
-            <div id="rsvp-body" >
-                <b>to Michael and Liz's wedding in Warrenville, IL</b>
+        <div id="rsvp-container">
+            <div class="rsvp-header">RSVP</div>
+            <div class="rsvp-text"><b>to Michael and Liz's wedding in Warrenville, IL</b></div>
+        
+            <div id="contact-form">
+                <ul id="errors" class="">
+                    <li id="info">There were some problems with your form submission:</li>
+                </ul>
+
+                <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+
+                <form method="post" action="process.php">
+                    <p><b>Names(s):</b></p>
+                    <input type="text" id="name" name="name" value="" required="required" autofocus="autofocus" />
+
+                    <p><b>Response:</b></p>
+                    <select id="response" name="response" required="required">
+                        <option value="accept">Accepts with pleasure</option>
+                        <option value="decline">Decclines with regret</option>
+                    </select>
+
+
+                    <p><b>Phone #:</b></p>
+                    <input type="tel" id="phone" name="phone" value="" required="required" />
+
+
+                    <p><b>Comments:</b></p>
+                    <textarea id="comments" name="comments" placeholder="Do you have any additional comments?"></textarea>
+
+                    <input type="submit" value="Submit" id="submit-button" />
+                </form>
             </div>
-            <ul id="errors" class="">
-                <li id="info">There were some problems with your form submission:</li>
-            </ul>
-            
-            <p id="success">Thanks for your message! We will get back to you ASAP!</p>
-            
-            <form method="post" action="process.php">
-                <p><b>Names(s):</b></p>
-                <input type="text" id="name" name="name" value="" required="required" autofocus="autofocus" />
-                
-                <p><b>Response:</b></p>
-                <select id="response" name="response" required="required">
-                    <option value="accept">Accepts with pleasure</option>
-                    <option value="decline">Decclines with regret</option>
-                </select>
-
-                 
-                <p><b>Phone #:</b></p>
-                <input type="tel" id="phone" name="phone" value="" required="required" />
-
-
-                <p><b>Comments:</b></p>
-                <textarea id="comments" name="comments" placeholder="Do you have any additional comments?"></textarea>
-                    
-                <input type="submit" value="Submit" id="submit-button" />
-            </form>
             <div id="note"> <b>Note: If our joyous day is blessed by rain, we will text you with relocation information as well as update this website.</b>
+            </div>
         </div>
-        </div>
-
         
         
         
