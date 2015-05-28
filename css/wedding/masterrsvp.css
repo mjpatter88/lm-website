@@ -11,12 +11,19 @@ html {
 
 #home-logo img
 {
-    height: 38px;
+    height: 58px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     margin-top: 0px;
     padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#home-logo a
+{
+    padding-top: 0px;
+    margin-top: 20px;
 }
 
 

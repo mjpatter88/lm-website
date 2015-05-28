@@ -5,22 +5,20 @@ html {
     -o-background-size: cover;
 }
 
-#logo {
-    position: relative;
-    margin-top: 15%;
-    width: 100%;
-    padding-bottom: 15px;
-    
-}
-
-#home-logo img
+#home-logo
 {
     margin-left: 8px;
     padding: 0;
-    height: 70px;
     position: fixed;
     margin-top: 3px;
-    
+}
+#home-logo img
+{
+    height: 70px;
+}
+#home-logo a
+{
+    height: 100px;
 }
 
 
