@@ -10,51 +10,89 @@ html {
 }
 
 
-#info
-{
-    position:relative;
-    float: left;
-    left: 20px;
-    font-family: poiret-one, sans-serif;
-    font-size: 5em;
-    text-align: left;
+#events-container{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 100px;
     color: white;
-    top: 150px;
-    padding-left:10px;
-    border-left: 10px solid white;
-
+    width: 540px;
 }
 
-@media only screen and (max-width : 400px){
-    #info {
-        font-size: 2.8em;
-    }  
+.events-header {
+    font-size: 5em;
+    border-bottom: solid white 3px;
+    text-align: center;
+    font-family: euphoria-script, cursive;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.events-button {
+    font-size: .8em;   
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-align: center;
+    outline: 2px solid white;
+    background-color: rgba(250, 250, 250, .3);
+    padding: 5px;
+    width: 100px;
     
 }
-.address
-{
-   font-size: .4em;   
-}
 
-.map
-{
-    outline: 1px solid white;
-    font-size: .4em;
-    padding: 8px;
+.events-text{
     text-align: center;
-    background-color: rgba( 250, 250, 250, .4);
-    margin-top: 20px;
+    font-size: 2em;
+    font-family: poiret-one, sans-serif;
     position: relative;
-    float: left;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+.events-button:hover {
+    background-color: rgba(250, 250, 250, .2);
 }
 
-p
-{
-    margin-bottom: 0px;
+
+.events-button:active {
+    position:relative;
+    top:1px;
+}
+
+p{
+    font-size: 2em;
+    position: relative;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
+@media only screen and (max-width : 800px){
+    #events-container{
+        margin-top: 80px;
+    }
+    
+}
 
+@media only screen and (max-width : 650px){
+    #events-container{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%
+    }
+    
+}
 
-
+@media only screen and (max-width : 480px){
+    .events-text{
+        font-size: 1.4em;   
+    }
+    
+    .events-header{
+        font-size: 15vw;;
+    }   
+    .events-button{
+        width: 80px;   
+    }
+}

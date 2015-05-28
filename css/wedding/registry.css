@@ -9,11 +9,11 @@ html {
     -o-background-size: cover;
 }
 
-#registry-info{
+#registry-container{
     font-family: poiret-one, sans-serif;
     position: relative;
-    margin-top: 150px;;
-    margin-left: 10%;
+    margin-top: 150px;
+    margin-left: 100px;
     color: white;
     width: 600px;
 }
@@ -62,23 +62,33 @@ p{
     padding: 0px;
 }
 
-@media only screen and (max-width : 568px){
-    #registry-info{
-        margin-top: 10%;
-        font-size: 4vw;
-        width: 90%;
+@media only screen and (max-width : 800px){
+    #registry-container{
+        margin-top: 80px;
+        width: 80%;
         position: relative;
         margin-right: auto;
         margin-left: auto;
+    }
+    .registry-header{
+        font-size: 4.5em;  
+    }
+    .registry-button{
+        font-size: 1.8em; 
+        width:270px;
     }
 }
 
-@media only screen and (max-width : 800px){
-    #registry-info{
-        font-size:2vw;
+@media only screen and (max-width : 568px){
+    #registry-container{
         width: 90%;
         position: relative;
         margin-right: auto;
         margin-left: auto;
     }
+    .registry-header{
+        font-size: 4em;  
+    }
 }
+
+

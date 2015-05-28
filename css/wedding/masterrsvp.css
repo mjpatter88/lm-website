@@ -1,12 +1,91 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../../images/wedding/stairs.jpg) no-repeat center center fixed;
-    background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+
+
+#home-logo img
+{
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.pure-menu {
+    min-width: 800px;
+    font-family: poiret-one, sans-serif;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    
+}
+
+.pure-menu-item
+{
+    font-size: 1.5em;
+    position: relative;
+    padding: 0px;
+}
+
+.pure-menu-list
+{
+    text-align: left;
+    position: relative;
+    width: 100%;
+    
+}
+
+.pure-menu-link
+{
+    color: rgba(47, 79, 79, 1);
+    text-align: left;
+    position: relative;
+}
+
+.pure-menu-item a:hover
+{
+    text-shadow: 1px 1px rgba(100, 100, 100, 0.3);
+    background-color: none;
+    background: none;
+    
+}
+
+.pure-menu-item a:active
+{
+    position:relative;
+    top:1px;
+    background: none;
+}
+
+.pure-menu-children
+{
+    font-size: .6em; 
+    background: none;
+}
+
+.pure-menu-children a:hover
+{ 
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+@-ms-viewport{
+  width: device-width;
 }
 
 #rsvp-container{
