@@ -1,15 +1,3 @@
-html {
-    /* Apply an image to the entire background */
-    background: url(../../images/wedding/red%20cedar%20lodge%202.jpg) no-repeat top left fixed;
-    background-size: cover;
-    
-    /* Add vendor specific prefixes for wider support */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-
 #events-container{
     position: relative;
     margin-top: 150px;
