@@ -23,9 +23,16 @@ html {
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
     width: 100%;
-    
-    
 }
+
+#arrow img
+{
+    padding: 0px;
+    width: 120%;
+    position: relative; 
+    margin-left: -10%; 
+}
+
 
 .hotel-button {
     font-size: 1.1em;   

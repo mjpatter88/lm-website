@@ -11,7 +11,7 @@ html {
 
 #home-logo img
 {
-    height: 58px;
+    height: 57px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -30,7 +30,7 @@ html {
 .pure-menu {
     min-width: 800px;
     font-family: poiret-one, sans-serif;
-    height:5px;
+    height:50px;
     width: 100%;
     margin-top: 10px;
     

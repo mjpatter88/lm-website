@@ -23,8 +23,13 @@ html {
     text-align: center;
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
-    
-    
+}
+
+#arrow img
+{
+    padding: 0px;
+    width: 100%;
+    position: relative; 
 }
 
 .registry-button {

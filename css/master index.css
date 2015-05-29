@@ -32,12 +32,15 @@ html,body
 }
 
 
-.pure-menu {
+.pure-menu,
+.pure-menu-horizontal
+{
     min-width: 800px;
     font-family: poiret-one, sans-serif;
     height:50px;
     width: 100%;
     margin-top: 10px;
+    
 }
 
 .pure-menu-selected {
