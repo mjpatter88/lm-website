@@ -19,47 +19,48 @@ html,body
     width: 100%;
     position: relative; 
 }
-#home-logo
-{
-    margin-left: 8px;
-    padding: 0;
-    position: fixed;
-    margin-top: 3px;
-}
+
+
 #home-logo img
 {
-    height: 70px;
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
+
 #home-logo a
 {
-    height: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 
 .pure-menu {
-    margin-top: 1%;
     min-width: 800px;
-    height: 50px;
     font-family: poiret-one, sans-serif;
-    color: white;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;    
+    height:50px;
+    width: 100%;
+    margin-top: 10px;
+    
 }
 
 .pure-menu-item
 {
     font-size: 1.5em;
-    color: white;
     position: relative;
+    padding: 0px;
 }
 
 .pure-menu-list
 {
     text-align: left;
-    color: white;
     position: relative;
-    margin-left: 80px;     
+    width: 100%;
+    
 }
 
 .pure-menu-link

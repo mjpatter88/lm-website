@@ -23,16 +23,16 @@ html {
 #home-logo a
 {
     padding-top: 0px;
-    margin-top: 20px;
+    padding-bottom: 0px;
 }
 
 
 .pure-menu {
     min-width: 800px;
     font-family: poiret-one, sans-serif;
-    position: fixed;
+    height:5px;
     width: 100%;
-    top:0px;
+    margin-top: 10px;
     
 }
 
@@ -97,7 +97,7 @@ a {
 
 #rsvp-container{
     position: relative;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 100px;
     color: rgba(47, 79, 79, 1);
     width: 540px;
