@@ -1,5 +1,5 @@
 body {
-    color: white;
+
 }
 /*
 Add transition to containers so they can push in and out.
@@ -22,18 +22,18 @@ This is the parent `<div>` that contains the menu and the content area.
     padding-left: 0;
 }
     #layout.active #menu {
-        left: 150px;
-        width: 150px;
+        left: 200px;
+        width: 200px;
+
     }
 
     #layout.active .menu-link {
-        left: 150px;
-        background-color: white;
+        left: 200px;
     }
 
 #menu {
-    margin-left: -150px; /* "#menu" width */
-    width: 150px;
+    margin-left: -200px; /* "#menu" width */
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,9 +46,10 @@ This is the parent `<div>` that contains the menu and the content area.
     All anchors inside the menu should be styled like this.
     */
     #menu a {
-        color: rgba(47, 79, 79, 1);
+        color: white;
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
+        width: 10px
     }
 
     /*
@@ -57,28 +58,29 @@ This is the parent `<div>` that contains the menu and the content area.
      #menu .pure-menu,
      #menu .pure-menu ul {
         border: none;
-        background: white;
     }
         /*
         Change color of the anchor links on hover/focus.
         */
-        #menu .pure-menu li a:hover,
-        #menu .pure-menu li a:focus {
+        #menu .pure-menu li a:hover {
             text-shadow: 2px 2px rgba(100, 100, 100, 0.4);
     background-color: none;
     background: none;
         }
 
+        #menu .pure-menu li a:focus {
+            background-color:none;
+        }
     /*
     This styles the selected menu item `<li>`.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: rgba(47, 79, 79, 1);
         color: white;
         font-size: 1.5em;
         padding: 8px;
         padding-left: 15px;
+        border-bottom: 
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -110,29 +112,31 @@ small screens.
     display: block; /* show this only on small screens */
     top: 0;
     left: 0; /* "#menu width" */
-    background: rgba(250, 250, 250, .7);;
+    background: rgba(0, 0, 0, .3);
     font-size: 10px; /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
     height: auto;
     padding: 2.1em 1.6em;
+    outline: solid white 1px;
 }
 
     .menu-link:hover,
     .menu-link:focus {
-        background: rgba(250, 250, 250, 1);
+        background: rgba(0, 0, 0, .3);
+        outline: solid white 1px;
     }
 
     .menu-link span {
         position: relative;
         display: block;
-        color: rgba(47, 79, 79, 1);
+        color: rgba(250, 250, 250, 1);
     }
 
     .menu-link span,
     .menu-link span:before,
     .menu-link span:after {
-        background-color: rgba(47, 79, 79, 1);
+        background-color: white;
         width: 100%;
         height: 0.2em;
     }
@@ -154,7 +158,7 @@ small screens.
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 
     .header,
     .content {
@@ -163,25 +167,26 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+        padding-left: 200px; /* left col width "#menu" */
         left: 0;
     }
     #menu {
-        left: 150px;
+        left: 200px;
     }
 
     .menu-link {
         position: fixed;
-        left: 150px;
+        left: 200px;
         display: none;
+        background-color: transparent;
     }
 
     #layout.active .menu-link {
-        left: 150px;
+        left: 200px;
     }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 500px) {
     /* Only apply this when the window is small. Otherwise, the following
     case results in extra padding on the left:
         * Make the window small.
@@ -190,6 +195,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     */
     #layout.active {
         position: relative;
-        left: 150px;
+        left: 200px;
+    }
+    
+    #menu {
+       background-color: rgba(0, 0, 0, .3);
+        outline: solid white 1px;
     }
 }

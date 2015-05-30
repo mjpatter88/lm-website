@@ -10,19 +10,19 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 
-#home-logo img
+#home-logo
 {
-    height: 57px;
-    margin-left: auto;
+    width:170px;
+    margin-left: 0;
     margin-right: auto;
     position: relative;
     margin-top: 0px;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
+    padding-right: 15px
 }
 
 #home-logo a
@@ -38,13 +38,11 @@ html,body
     min-width: 800px;
     font-family: poiret-one, sans-serif;
     height:50px;
-    width: 100%;
-    margin-top: 10px;
-    
+    width: 100%;    
 }
 
 .pure-menu-selected {
-    backgroung-color: none;
+    background-color: none;
 }
 
 .pure-menu-item
@@ -52,21 +50,23 @@ html,body
     font-size: 1.5em;
     position: relative;
     padding: 0px;
+    background-color: transparent;
     
 }
 
 .pure-menu-list
 {
     text-align: left;
-    position: relative;
-    
+    position: relative;  
+    background-color: transparent;
 }
 
 .pure-menu-link
 {
-    color: white;
-    text-align: left;
+    text-align: center;
     position: relative;
+    background-color: transparent;
+    width: 170px;
 }
 
 .pure-menu-item a:hover
@@ -77,6 +77,12 @@ html,body
     
 }
 
+.pure-menu-item a:focus
+{
+    background-color: none;
+    background: none;
+    
+}
 .pure-menu-item a:active
 {
     position:relative;
@@ -97,7 +103,6 @@ html,body
 
 a {
     text-decoration: none;
-    color: white;
     
 }
 
