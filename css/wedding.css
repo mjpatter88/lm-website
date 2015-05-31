@@ -14,9 +14,9 @@ html {
 #rsvp-container{
     position: relative;
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 300px;
     color: white;
-    width: 340px;
+    width: 300px;
 }
 
 .rsvp-header {
@@ -63,30 +63,29 @@ html {
     top:1px;
 }
 
-@media only screen and (max-width : 800px){
-    #rsvp-container{
-        margin-top: 80px;
-    }
-    
-}
 
-@media only screen and (max-width : 450px){
+
+@media only screen and (max-width : 768px){
     #rsvp-container{
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        width: 90%
+        margin-top: 20px;
     }
     
 }
 
 @media only screen and (max-width : 320px){
+    #rsvp-container {
+        width: 90%;   
+    }
+    
     .rsvp-text{
         font-size: 1.3em;   
     }
     
     .rsvp-header{
-        font-size: 3.5em;;
+        font-size: 4em;;
     }   
     .rsvp-button{
         width: 150px;   

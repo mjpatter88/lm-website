@@ -13,9 +13,9 @@ html {
     font-family: poiret-one, sans-serif;
     position: relative;
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 175px;
     color: white;
-    width: 600px;
+    width: 575px;
 }
 
 .registry-header {
@@ -23,13 +23,7 @@ html {
     text-align: center;
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
-}
-
-#arrow img
-{
-    padding: 0px;
-    width: 100%;
-    position: relative; 
+    border-bottom: solid white 4px;
 }
 
 .registry-button {
@@ -66,9 +60,9 @@ p{
     padding: 0px;
 }
 
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 768px){
     #registry-container{
-        margin-top: 80px;
+        margin-top: 20px;
         width: 80%;
         position: relative;
         margin-right: auto;

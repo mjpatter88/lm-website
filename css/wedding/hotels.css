@@ -1,6 +1,6 @@
 html {
     /* Apply an image to the entire background */
-    background: url(../../images/wedding/jupiterrocks.jpg) no-repeat bottom left fixed;
+    background: url(../../images/wedding/jupiterrocks.jpg) no-repeat top center fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
@@ -12,7 +12,7 @@ html {
 #hotel-container{
     position: relative;
     margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 150px;
     color: white;
     width: 540px;
 }
@@ -23,14 +23,7 @@ html {
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
     width: 100%;
-}
-
-#arrow img
-{
-    padding: 0px;
-    width: 120%;
-    position: relative; 
-    margin-left: -10%; 
+    border-bottom: solid white 4px;
 }
 
 
@@ -68,9 +61,9 @@ html {
 }
 
 
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 768px){
     #hotel-container{
-        margin-top: 80px;
+        margin-top: 20px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
@@ -89,7 +82,7 @@ html {
 
 @media only screen and (max-width : 568px){
     #hotel-container{
-        width:450px;
+        width:470px;
     }
     .hotel-button{
         width: 50%;
@@ -100,7 +93,7 @@ html {
     }
 }
 
-@media only screen and (max-width : 450px){
+@media only screen and (max-width : 500px){
     #hotel-container{
         width: 95%;
     }
