@@ -1,5 +1,6 @@
 html {
     /* Apply an image to the entire background */
+    background-color: gray;
     background: url(../../images/wedding/red%20cedar%20lodge%202.jpg) no-repeat top left fixed;
     background-size: cover;
     
