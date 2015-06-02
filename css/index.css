@@ -1,5 +1,6 @@
 html {
     /* Apply an image to the entire background */
+    background-color: gray;
     background: url(../images/giraffe3.jpg) no-repeat bottom right fixed;
     background-size: cover;
     

@@ -1,5 +1,6 @@
 html {
     /* Apply an image to the entire background */
+    background-color: gray;
     background: url(../../images/wedding/shannonHall.jpg) no-repeat bottom left fixed;
     background-size: cover;
     

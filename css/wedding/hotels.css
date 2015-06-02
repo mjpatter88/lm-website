@@ -1,5 +1,6 @@
 html {
     /* Apply an image to the entire background */
+    background-color: gray;
     background: url(../../images/wedding/jupiterrocks.jpg) no-repeat top center fixed;
     background-size: cover;
     

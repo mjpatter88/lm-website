@@ -9,7 +9,7 @@ a {
 {
     height: 57px;
     margin-left: 10pz;
-    position: fixed;
+    position: absolute;
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -67,7 +67,7 @@ a {
 }
 
 .custom-toggle {
-    position: fixed;
+    position: absolute;
     display: block; /* show this only on small screens */
     top: 0;
     right: 0; /* "#menu width" */
@@ -124,7 +124,7 @@ a {
     }
     .custom-wrapper {
         overflow: hidden;
-        background-color:rgba(250, 250, 250, .3);
+        background-color:rgba(0, 0, 0, .5);
     }
     
     .pure-menu-link {

@@ -1,5 +1,6 @@
 html {
     /* Apply an image to the entire background */
+    background-color: gray;
     background: url(../../images/wedding/st.%20james.JPG) no-repeat bottom left fixed;
     background-size: cover;
     

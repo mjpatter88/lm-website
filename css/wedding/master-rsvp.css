@@ -146,6 +146,7 @@ a {
     
 }
 
+#home-logo,
 #home-logo-dark
 {
     height: 57px;
@@ -155,6 +156,11 @@ a {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+#home-logo{
+    visibility: hidden;   
+}
+
 
 
 .custom-wrapper {
@@ -227,7 +233,7 @@ a {
     .custom-toggle span,
     .custom-toggle:before,
     .custom-toggle:after {
-        background-color: rgba(47, 79, 79, 1);
+        background-color: white;
         width: 20px;
         height: 2px;
     }
@@ -254,7 +260,13 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-
+    #home-logo-dark{
+        visibility: hidden;
+    }
+    #home-logo{
+        visibility: visible;   
+    }
+    
     .custom-toggle {
         display: block;
         visibility: visible;
