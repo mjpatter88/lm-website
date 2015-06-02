@@ -17,6 +17,7 @@ html {
     margin-left: 175px;
     color: white;
     width: 575px;
+    padding-bottom: 20px;
 }
 
 .registry-header {
@@ -78,7 +79,7 @@ p{
     }
 }
 
-@media only screen and (max-width : 568px){
+@media only screen and (max-width : 500px){
     #registry-container{
         width: 90%;
         position: relative;
@@ -87,6 +88,10 @@ p{
     }
     .registry-header{
         font-size: 4em;  
+    }
+    .registry-button{
+        font-size: 1.5em; 
+        width: 230px;
     }
 }
 

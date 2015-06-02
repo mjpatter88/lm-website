@@ -124,7 +124,7 @@ a {
     }
     .custom-wrapper {
         overflow: hidden;
-        background-color:rgba(0, 0, 0, .5);
+        background-color:rgba(0, 0, 0, .4);
     }
     
     .pure-menu-link {
