@@ -14,7 +14,7 @@ html {
 #home-logo-dark
 {
     height: 57px;
-    margin-left: 10px;
+    margin-left: 10pz;
     position: fixed;
     margin-top: 0px;
     padding-top: 0px;
@@ -142,6 +142,3 @@ html {
     left: 40px;
 }
 
-@-ms-viewport{
-  width: device-width;
-}
