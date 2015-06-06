@@ -1,6 +1,5 @@
 html {
     /* Apply an image to the entire background */
-    background-color: gray;
     background: url(../../images/wedding/stairs.jpg) no-repeat center center fixed;
     background-size: cover;
     

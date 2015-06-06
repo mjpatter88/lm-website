@@ -15,11 +15,11 @@ html {
     margin-top: 150px;
     margin-left: 150px;
     color: white;
-    width: 640px;
+    width: 540px;
 }
 
 .hotel-header {
-    font-size: 5em;
+    font-size: 3.8em;
     text-align: center;
     font-family: euphoria-script, cursive;
     margin-bottom: 20px;
@@ -29,7 +29,7 @@ html {
 
 
 .hotel-button {
-    font-size: 1.2em;   
+    font-size: 1.1em;   
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +44,7 @@ html {
 
 .hotel-text{
     text-align: center;
-    font-size: 1.35em;
+    font-size: 1.5em;
     font-family: poiret-one, sans-serif;
     position: relative;
     margin-left: auto;
@@ -68,10 +68,9 @@ html {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        width: 99%;
           }
     .hotel-header{
-        font-size: 3.7em   
+        font-size: 3.2em   
     }
     .hotel-button{
         width: 80%;
@@ -82,7 +81,7 @@ html {
     }
 }
 
-@media only screen and (max-width : 567px){
+@media only screen and (max-width : 568px){
     #hotel-container{
         width:470px;
     }
