@@ -1,7 +1,7 @@
 html {
     /* Apply an image to the entire background */
     background-color: gray;
-    background: url(../../images/wedding/st.%20james.JPG) no-repeat bottom left fixed;
+    background: url(../../images/wedding/st.-james.JPG) no-repeat bottom left fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
