@@ -3,7 +3,6 @@
 //Only do this if it is a post request
 if(isset($_POST))
 {
-
     $form_ok = true;
     $errors = array();
 
@@ -20,7 +19,7 @@ if(isset($_POST))
     {
         $location = "Illinois";
     }
-    elseif (isset($_POST['Illinois']))
+    elseif (isset($_POST['Iowa']))
     {
         $location = "Iowa";
     }
@@ -48,7 +47,7 @@ if(isset($_POST))
     }
     // It's ok to not enter additional comments, so don't check that this exists.
 
-    // Send two emails if everything is ok.
+    // Send Liz and I an email if everything is ok.
     if($form_ok)
     {
         $headers = "From: Michaelplusliz.com" . "\r\n";
@@ -66,14 +65,14 @@ if(isset($_POST))
 
         if($mail_sent)
         {
-            printf("Email sent");
+            header('Location: rsvp-thanks.html');
         }
         else
         {
-            printf("Email not sent");
+            header('Location: rsvp-problem.html');
         }
     }
-    // Otherwise email me with the problem
+    // Otherwise email me with the problem and redirect.
     else
     {
         $headers = "From: Michaelplusliz.com" . "\r\n";
@@ -87,15 +86,7 @@ if(isset($_POST))
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 
         $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
-
-        if($mail_sent)
-        {
-            printf("Error message email sent");
-        }
-        else
-        {
-            printf("Error message email not sent");
-        }
+        header('Location: rsvp-problem.html');
     }
 
 
