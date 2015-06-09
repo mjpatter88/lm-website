@@ -92,7 +92,7 @@ if(isset($_POST))
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>
                       <p>Problems: {$error_string}";
 
-        $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
+        //$mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
         //header('Location: rsvp-problem.html');
     }
 
