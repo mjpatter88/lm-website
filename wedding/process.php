@@ -75,6 +75,10 @@ if(isset($_POST))
     // Otherwise email me with the problem and redirect.
     else
     {
+        printf("HERE!");
+        print_r($errors);
+        print_r($_POST);
+        flush();
         $error_string = implode(",", $errors);
 
         $headers = "From: Michaelplusliz.com" . "\r\n";
@@ -89,7 +93,7 @@ if(isset($_POST))
                       <p>Problems: {$error_string}";
 
         $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
-        header('Location: rsvp-problem.html');
+        //header('Location: rsvp-problem.html');
     }
 
 
