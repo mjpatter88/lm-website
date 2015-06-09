@@ -75,6 +75,8 @@ if(isset($_POST))
     // Otherwise email me with the problem and redirect.
     else
     {
+        $error_string = implode(",", $errors);
+
         $headers = "From: Michaelplusliz.com" . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
@@ -84,7 +86,7 @@ if(isset($_POST))
                       <p><strong>Phone Number: </strong> {$phone_num} </p>
                       <p><strong>Comments: </strong> {$comments} </p>
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>
-                      <p>Problems: {$errors}";
+                      <p>Problems: {$error_string}";
 
         $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
         header('Location: rsvp-problem.html');
