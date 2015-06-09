@@ -15,11 +15,11 @@ if(isset($_POST))
     $response = $_POST['response'];
     $phone_num = $_POST['phone'];
     $comments = $_POST['comments'];
-    if(isset($_POST['Illinois']))
+    if(isset($_POST['illinois']))
     {
         $location = "Illinois";
     }
-    elseif (isset($_POST['Iowa']))
+    elseif(isset($_POST['iowa']))
     {
         $location = "Iowa";
     }
