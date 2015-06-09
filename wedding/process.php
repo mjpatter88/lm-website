@@ -48,7 +48,7 @@ if(isset($_POST))
                       <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 
         $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
-        //$mail_sent = mail("elizabeth.lee@cru.org","NEW RSVP",$emailbody,$headers);
+        $mail_sent = mail("ealee665@gmail.com","NEW RSVP",$emailbody,$headers);
 
         if($mail_sent)
         {
