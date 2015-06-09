@@ -1,7 +1,7 @@
 html {
     /* Apply an image to the entire background */
     background-color: gray;
-    background: url(../../images/wedding/stairs.jpg) no-repeat center center fixed;
+    background: url(../../images/wedding/orangeGrove.jpg) no-repeat left center fixed;
     background-size: cover;
     
     /* Add vendor specific prefixes for wider support */
