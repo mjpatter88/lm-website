@@ -16,8 +16,21 @@ if(isset($_POST))
     $response = $_POST['response'];
     $phone_num = $_POST['phone'];
     $comments = $_POST['comments'];
+    if(isset($_POST['Illinois']))
+    {
+        $location = "Illinois";
+    }
+    elseif (isset($_POST['Illinois']))
+    {
+        $location = "Iowa";
+    }
+    else
+    {
+        $formok = false;
+        $errors[] = "The location was not determined. Did you submit the rsvp form?";
+    }
 
-    //validate data
+    // Validate the remaining data
     if(empty($name))
     {
         $formok = false;
@@ -33,14 +46,15 @@ if(isset($_POST))
         $formok = false;
         $errors[] = "You have not entered a phone number.";
     }
-    //It's ok to not enter additional comments
+    // It's ok to not enter additional comments, so don't check that this exists.
 
     // Send two emails if everything is ok.
-    if($form_ok){
+    if($form_ok)
+    {
         $headers = "From: Michaelplusliz.com" . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-        $emailbody = "<p>A new guest has completed an RSVP.</p>
+        $emailbody = "<p>A new guest has completed an RSVP to {$location}.</p>
                       <p><strong>Name: </strong> {$name} </p>
                       <p><strong>Response: </strong> {$response} </p>
                       <p><strong>Phone Number: </strong> {$phone_num} </p>
@@ -60,11 +74,12 @@ if(isset($_POST))
         }
     }
     // Otherwise email me with the problem
-    else {
+    else
+    {
         $headers = "From: Michaelplusliz.com" . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-        $emailbody = "<p>A new guest has completed an RSVP.</p>
+        $emailbody = "<p>Problem with the RSVP submission to {$location}.</p>
                       <p><strong>Name: </strong> {$name} </p>
                       <p><strong>Response: </strong> {$response} </p>
                       <p><strong>Phone Number: </strong> {$phone_num} </p>
