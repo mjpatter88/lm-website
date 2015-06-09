@@ -25,24 +25,24 @@ if(isset($_POST))
     }
     else
     {
-        $formok = false;
+        $form_ok = false;
         $errors[] = "The location was not determined. Did you submit the rsvp form?";
     }
 
     // Validate the remaining data
     if(empty($name))
     {
-        $formok = false;
+        $form_ok = false;
         $errors[] = "You have not entered a name.";
     }
     if(empty($response))
     {
-        $formok = false;
+        $form_ok = false;
         $errors[] = "You have not entered a response.";
     }
     if(empty($phone_num))
     {
-        $formok = false;
+        $form_ok = false;
         $errors[] = "You have not entered a phone number.";
     }
     // It's ok to not enter additional comments, so don't check that this exists.
@@ -83,7 +83,8 @@ if(isset($_POST))
                       <p><strong>Response: </strong> {$response} </p>
                       <p><strong>Phone Number: </strong> {$phone_num} </p>
                       <p><strong>Comments: </strong> {$comments} </p>
-                      <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
+                      <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>
+                      <p>Problems: {$errors}";
 
         $mail_sent = mail("mjpatter88@gmail.com", "NEW RSVP", $emailbody, $headers);
         header('Location: rsvp-problem.html');
