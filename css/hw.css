@@ -1,0 +1,94 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: rgba(35, 155, 160, .8);
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+
+#home-logo
+{
+    height: 57px;
+    margin-left: 10pz;
+    position: absolute;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+.hw-rsvp-button {
+    font-family:poiret-one, sans-serif;  
+    font-size: 3em;   
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    text-align: center;
+    outline: 2px solid white;
+    background-color: rgba(250, 250, 250, .3);
+    padding: 5px;
+    width: 200px;
+    
+}
+
+
+.hw-rsvp-button:hover {
+    background-color: rgba(250, 250, 250, .2);
+}
+
+
+.hw-rsvp-button:active {
+    position:relative;
+    top:1px;
+}
+
+.header {
+    font-family: euphoria-script, cursive;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.text{
+    font-family:poiret-one, sans-serif;  
+    font-size: 2em;   
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#date {
+    font-family:poiret-one, sans-serif;  
+    font-size: 10em;   
+    text-align: center;
+    background-color: white;
+    color: rgba(35, 155, 160, .8);
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 30px;
+    
+
+}
+
+    
+}
+
+@media only screen and (max-width : 320px){
+    .rsvp-button{
+        width: 150px;   
+    }
+}
+
