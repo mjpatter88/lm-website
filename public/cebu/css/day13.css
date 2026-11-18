@@ -1,0 +1,15 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: gray;
+    background: url(../images/airplane2.jpg) no-repeat bottom right fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body{
+  color:white;
+}

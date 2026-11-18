@@ -1,0 +1,13 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: white;
+        
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body{
+  color:black;
+}

@@ -1,0 +1,15 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: gray;
+    background: url(../images/halohalo.jpg) no-repeat bottom center fixed;
+    background-size: cover;
+    
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body{
+  color: black;
+}

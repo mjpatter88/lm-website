@@ -1,0 +1,404 @@
+body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@font-face{ 
+	font-family: 'samba';
+	src: url('samba-webfont.eot');
+	src: url('samba-webfont.eot?iefix') format('eot'),
+	     url('samba-webfont.woff') format('woff'),
+	     url('samba-webfont.ttf') format('truetype'),
+	     url('samba-webfont.svg#webfont') format('svg');
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active #menu {
+        left: 150px;
+        width: 150px;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -150px; /* "#menu" width */
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: white;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/*
+All anchors inside the menu should be styled like this.
+*/
+#menu a {
+    color: #999;
+    border: none;
+    padding: 0.6em 0 0.6em 0.6em;
+}
+
+/*
+Remove all background/borders, since we are applying them to #menu.
+*/
+ #menu .pure-menu,
+ #menu .pure-menu ul {
+    border: none;
+    background: transparent;
+}
+
+/*
+Add that light border to separate items into groups.
+*/
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+    border-top: 1px solid whitesmoke;
+}
+    /*
+    Change color of the anchor links on hover/focus.
+    */
+    #menu .pure-menu li a:hover,
+    #menu .pure-menu li a:focus {
+        background: whitesmoke;
+    }
+
+/*
+This styles the selected menu item `<li>`.
+*/
+#menu .pure-menu-selected,
+#menu .pure-menu-heading {
+    background: teal;
+}
+    /*
+    This styles a link within a selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected a {
+        color: #fff;
+    }
+
+/*
+This styles the menu heading.
+*/
+#menu .pure-menu-heading {
+    font-size: 110%;
+    color: white;
+    margin: 0;
+    font-family: 'Megrim';
+}
+
+    
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: white;
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: whitesmoke;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: gray;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+.pure-menu-item {
+  height:2em;
+}
+
+.home-container{
+  text-align: center;
+  margin-top: 25%;
+  color: white;
+}
+
+.subcontainer1{
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 5px;
+  font-family: 'megrim', cursive;
+}
+
+.subcontainer2{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  font-size: 5em;
+  padding: 30px;
+  margin: 0;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.15em;
+  
+}
+
+button{
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 1.3em;
+  padding: 8px 35px 8px 35px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 50px
+}
+
+a, 
+a:visited, 
+a:link{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.container{
+  width: 80%;
+  margin-left: 5%;
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3em;
+}
+
+
+.chapter-title{
+  text-align: left;
+  margin-top: 30px;
+
+}
+.content{
+  font-size: .9em;
+}
+.container-button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button-pre{
+  background: gray;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  width:50px;
+  float: left;
+}
+
+.button-nex{
+  background: gray;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  width:50px;
+  float: right;
+}
+
+.center{
+  margin-top: 100px;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+}
+
+.pure-menu-children {
+  left:10%;
+  top:auto;
+  width: 150px;
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    #layout {
+        padding-left: 150px; /* left col width "#menu" */
+        left: 0;
+    }
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+}
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .home-container{
+  margin-top: 0%;
+}
+  
+  h1{
+    font-size: 3em;
+    padding: 15px;
+    }
+  h2{
+    font-size: 1.2em;
+  }
+  h3{
+    font-size: .9em;
+  }
+  button{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1{
+    font-size: 2.5em;
+    padding: 10px;
+    }
+  h2{
+    font-size: 1.1em;
+  }
+  h3{
+    font-size: .8em;
+  }
+  button{
+    font-size: .9em;
+    margin-top: 10px;
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1{
+    font-size: 2em;
+    }
+  h2{
+    font-size: .8em;
+  }
+  h3{
+    font-size: .6em;
+  }
+  button{
+    font-size: .7em;
+    margin-top: 5px;
+    padding:10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  h1{
+    font-size: 1.3em;
+    }
+  }
+}

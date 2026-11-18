@@ -1,0 +1,48 @@
+html {
+    /* Apply an image to the entire background */
+    background-color: white;
+        
+    /* Add vendor specific prefixes for wider support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body{
+  color:black;
+}
+
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.rotateimg270 {
+  -webkit-transform:rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(1270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.rotateimg90 {
+  margin-top: 15px;
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+img{
+  margin: 20px;
+  width: 90%;
+}
+
+.pure-u-sm-1-2, .pure-u-md-1-3, .pure-u-lg-1-4{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
